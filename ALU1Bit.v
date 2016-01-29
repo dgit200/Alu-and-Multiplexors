@@ -56,7 +56,7 @@ mux1bit2to1 m1(a, ~a, op[1], s),
  assign g = s & t;
  assign p = s | t;
  
- input [3:0] q;
+ wire [3:0] q;
  assign q[0] = g;
  assign q[1] = p;
  assign q[2] = set;
